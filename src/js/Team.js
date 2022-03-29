@@ -8,7 +8,8 @@ import PositionedCharacter from "./PositionedCharacter.js";
 
 
 export default class Team {
-    constructor(characterGenerator, generateTeam){
+    constructor(characterGenerator, generateTeam, gamePlay){
+        this.gamePlay = gamePlay;
         this.characterGenerator = characterGenerator;
         this.generateTeam = generateTeam;
         this.characters = [new Daemon(1), new Undead(1), new Vampire(1), new Swordsman(1), new Bowman(1), new Magician(1)]
