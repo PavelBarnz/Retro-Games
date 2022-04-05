@@ -1,6 +1,7 @@
 export default class GameState {
   static from(object) {
-    // TODO: create object
-    return null;
+    localStorage.setItem("item", JSON.stringify(object));
+    let a = JSON.parse(localStorage.getItem("item"))
+    console.log(a)
   }
 }
